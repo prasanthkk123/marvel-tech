@@ -5,7 +5,7 @@
 ### 📋 Prerequisites
 - Git installed
 - Node.js 18+ installed
-- Java 17+ installed
+- Java 21 (LTS) installed
 - Maven 3.6+ installed
 
 ---
@@ -62,6 +62,29 @@ Frontend will be available at: http://localhost:3000
 3. **Select "GitHub Actions" as source**
 4. **The workflow will automatically deploy your frontend**
 5. **Visit**: https://prasanthkk123.github.io/marvel-tech
+
+---
+
+## 🤖 **Automated CI/CD Pipeline**
+
+Your project includes an automated GitHub Actions workflow that:
+
+### ✅ **What Happens Automatically**
+- **On every push to main**: Runs tests and builds both backend and frontend
+- **Backend**: Tests with Java 21, builds with Maven
+- **Frontend**: Tests with coverage, builds production-ready React app
+- **Deployment**: Automatically deploys frontend to GitHub Pages
+
+### 📊 **Monitor Your Builds**
+1. Go to your repository on GitHub
+2. Click the **"Actions"** tab
+3. View build status: ✅ Success / ❌ Failure
+4. Click on any workflow run to see detailed logs
+
+### 🔄 **Workflow Triggers**
+- **Push to main**: Full test + build + deploy
+- **Pull Request**: Tests only (no deployment)
+- **Manual**: Can be triggered manually from Actions tab
 
 ---
 

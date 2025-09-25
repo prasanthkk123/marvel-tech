@@ -30,7 +30,7 @@ A modern full-stack web application for MarvelTech, showcasing industrial automa
 
 ### Prerequisites
 - Node.js (v14 or higher)
-- Java 17
+- Java 21 (LTS)
 - Maven 3.6+
 
 ### Installation
