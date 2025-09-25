@@ -1,0 +1,2 @@
+import React from 'react';
+export default function ProductList({products}){return (<section id='products'><h2>Products & Services</h2>{products.map((cat,ci)=>(<div key={ci} style={{marginTop:18}}><h3>{cat.category}</h3><div className='grid'>{cat.items.map((item,ii)=>(<div className='card' key={ii}><img src={item.image} alt={item.name} /><h4>{item.name}</h4><p style={{color:'#526377',fontSize:13}}>{item.description ? item.description : ''}</p></div>))}</div></div>))}</section>);}

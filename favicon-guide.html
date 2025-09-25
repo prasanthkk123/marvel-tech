@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Setup Guide - MarvelTech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f4f7fb;
+        }
+        .header {
+            background: linear-gradient(90deg, #07344b, #0a3f5f);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .current-logo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .current-logo img {
+            max-width: 100px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+        .code {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #0d00fd;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .step {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #0d00fd;
+        }
+        .browser-preview {
+            display: flex;
+            align-items: center;
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .favicon-preview {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🌟 MarvelTech Favicon Setup</h1>
+        <p>Icon in Address Bar & Browser Tab</p>
+    </div>
+
+    <div class="section">
+        <h2>📍 Current Status</h2>
+        <p><strong>✅ I've updated your index.html</strong> to use your MarvelTech logo as the favicon!</p>
+        
+        <div class="current-logo">
+            <h3>Your Current Logo (Now Used as Favicon):</h3>
+            <img src="frontend/public/logomarveltech.jpg" alt="MarvelTech Logo">
+            <p><strong>File:</strong> logomarveltech.jpg</p>
+        </div>
+
+        <div class="browser-preview">
+            <img src="frontend/public/logomarveltech.jpg" class="favicon-preview" alt="Favicon">
+            <span>🌐 https://localhost:3000 - MarvelTech - Industrial Automation Solutions</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔧 What I Added to Your index.html</h2>
+        <div class="code">
+&lt;!-- Favicon - Icon in address bar --&gt;
+&lt;link rel="icon" type="image/x-icon" href="/logomarveltech.jpg"&gt;
+&lt;link rel="shortcut icon" type="image/x-icon" href="/logomarveltech.jpg"&gt;
+&lt;link rel="apple-touch-icon" href="/logomarveltech.jpg"&gt;
+        </div>
+        <p>This makes your MarvelTech logo appear in:</p>
+        <ul>
+            <li>🌐 Browser address bar</li>
+            <li>📑 Browser tabs</li>
+            <li>🔖 Bookmarks</li>
+            <li>📱 Mobile home screen (when saved)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🎯 To See Your Favicon in Action</h2>
+        
+        <div class="step">
+            <h3>Step 1: Start Your Website</h3>
+            <div class="code">
+# In terminal 1 (Backend)
+cd "d:\Projects\MARVEL TECH\backend"
+mvn spring-boot:run
+
+# In terminal 2 (Frontend)
+cd "d:\Projects\MARVEL TECH\frontend"
+npm start
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Step 2: View in Browser</h3>
+            <p>Open <strong>http://localhost:3000</strong> and look at:</p>
+            <ul>
+                <li>📍 Address bar (left side of URL)</li>
+                <li>📑 Browser tab title</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>Step 3: Clear Browser Cache (if needed)</h3>
+            <p>If you don't see the favicon immediately:</p>
+            <ul>
+                <li>Press <strong>Ctrl + F5</strong> to hard refresh</li>
+                <li>Or clear browser cache</li>
+                <li>Or try incognito mode</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔍 For Better Results (Optional)</h2>
+        <p>For the best favicon experience, you could create a proper .ico file:</p>
+        
+        <div class="step">
+            <h3>Option 1: Online Favicon Generator</h3>
+            <ol>
+                <li>Go to <strong>favicon.io</strong> or <strong>favicon-generator.org</strong></li>
+                <li>Upload your <code>logomarveltech.jpg</code></li>
+                <li>Download the generated <code>favicon.ico</code></li>
+                <li>Place it in <code>frontend/public/</code></li>
+                <li>Update the HTML to: <code>&lt;link rel="icon" href="/favicon.ico"&gt;</code></li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h3>Option 2: Keep Current Setup</h3>
+            <p>✅ Your current setup works perfectly fine! Modern browsers support JPG favicons.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📋 Summary</h2>
+        <div style="background: #d4edda; padding: 15px; border-radius: 5px; border-left: 4px solid #28a745;">
+            <h3>✅ Favicon is now set up!</h3>
+            <p><strong>Image used:</strong> logomarveltech.jpg</p>
+            <p><strong>Location:</strong> /public/logomarveltech.jpg</p>
+            <p><strong>Display:</strong> Will appear in browser address bar and tabs</p>
+            <p><strong>Next step:</strong> Start your website to see it in action!</p>
+        </div>
+    </div>
+</body>
+</html>
