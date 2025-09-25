@@ -1,0 +1,33 @@
+# GitHub Codespaces Configuration
+name: MarvelTech Development Environment
+
+on:
+  codespaces:
+    machines:
+      - 2-core
+
+# Development container configuration
+services:
+  app:
+    # Use a Node.js image that also has Java
+    image: mcr.microsoft.com/devcontainers/javascript-node:18
+    
+    # Install Java and Maven
+    features:
+      - ghcr.io/devcontainers/features/java:1
+        version: "17"
+      - ghcr.io/devcontainers/features/maven:1
+        version: "3.9"
+
+# Ports to expose
+forwardPorts:
+  - 3000  # React frontend
+  - 8080  # Spring Boot backend
+
+# VS Code extensions to install
+vscode:
+  extensions:
+    - ms-vscode.vscode-java-pack
+    - ms-vscode.vscode-spring-boot-dashboard
+    - bradlc.vscode-tailwindcss
+    - esbenp.prettier-vscode
